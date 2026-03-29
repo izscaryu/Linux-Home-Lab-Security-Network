@@ -143,8 +143,13 @@ alert tcp any any -> $HOME_NET 80 (msg:"HTTP Connection Attempt"; flags:S; sid:1
 
 From Kali, the following attacks were launched:
 - **ICMP ping** — `ping -c 3 192.168.1.10`
+-![Ping scan](images/pingamoUbuntuKali.png)
+
 - **Nmap SYN scan** — `nmap -sS 10.0.0.1`
+- ![Nmap scan](images/kalinmapReza.png)
+  
 - **SSH connection attempt** — `ssh patrik@10.0.0.1`
+- ![SSH connection](images/sshVezaKaliNaServer.png)
 
 Suricata successfully detected and logged all activity:
 
